@@ -45,7 +45,8 @@ class UserController extends Controller
     ];
 
     public function asep(){
-       return $this->siswa;
+      // return $this->siswa;
+      return view('user', ['user', ['user', $this->siswa]]);
     }
     
 }
